@@ -1,0 +1,57 @@
+.page-nav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+.page-nav a,
+.page-nav .current {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #eee;
+    color: #333;
+}
+
+.page-nav .current {
+    background-color: #333;
+    color: #fff;
+    pointer-events: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.tile {
+    text-align: center;
+}
+
+.tile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tile img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;       /* 中央を切り取る */
+    object-position: center; /* 中央に位置合わせ */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tile-title {
+    margin-top: 8px;
+    font-weight: bold;
+}
